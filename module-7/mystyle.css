@@ -1,0 +1,35 @@
+/* Style for plain white circles with black stroke */
+.plaincircle {
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+}
+
+/* Dashed border for first circle */
+.circleborder {
+    -fx-border-color: black;
+    -fx-border-width: 5;
+    -fx-border-style: dashed;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+/* Solid black border around the whole layout */
+.border {
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+
+/* Red filled circle */
+#redcircle {
+    -fx-fill: red;
+    -fx-stroke: red;
+    -fx-stroke-width: 2;
+}
+
+/* Green filled circle */
+#greencircle {
+    -fx-fill: green;
+    -fx-stroke: green;
+    -fx-stroke-width: 2;
+}
