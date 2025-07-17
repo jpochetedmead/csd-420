@@ -1,0 +1,35 @@
+-- Drop user if it already exists
+DROP USER IF EXISTS 'student1'@'localhost';
+
+-- Create user with password
+CREATE USER 'student1'@'localhost' IDENTIFIED BY 'pass';
+
+-- Grant all privileges
+GRANT ALL PRIVILEGES ON *.* TO 'student1'@'localhost';
+FLUSH PRIVILEGES;
+
+-- Drop the database if it already exists
+DROP DATABASE IF EXISTS databasedb;
+
+-- Create a new database
+CREATE DATABASE databasedb;
+
+-- Switch to the new database
+USE databasedb;
+
+-- Create the address33 table
+CREATE TABLE address33 (
+  ID INT PRIMARY KEY,
+  LASTNAME VARCHAR(40),
+  FIRSTNAME VARCHAR(40),
+  STREET VARCHAR(40),
+  CITY VARCHAR(40),
+  STATE VARCHAR(40),
+  ZIP VARCHAR(40)
+);
+
+-- Insert sample records
+INSERT INTO address33 VALUES
+(24, 'Lou', 'Woods', '1919 Bluewing Circle', 'Bellevue', 'NE', '68123'),
+(25, 'Lou', 'Woods', '1919 Bluewing Circle', 'Bellevue', 'NE', '68123'),
+(26, 'Lou', 'Woods', '1919 Bluewing Circle', 'Bellevue', 'NE', '68123');
