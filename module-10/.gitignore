@@ -1,0 +1,23 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore NetBeans or VSCode specific build folders
+/dist/
+out/
+build/
+bin/
+.vscode/
+
+# Keep all .java, .sql, and .jar files
+!*.java
+!*.sql
+!*.jar
